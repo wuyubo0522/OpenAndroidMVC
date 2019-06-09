@@ -1,13 +1,25 @@
 package com.yb.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
+import com.yb.openandroidmvc.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * 类说明：主页面，测试依赖是否发布成功
+ * @author 裕博
+ */
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+
     }
 }
