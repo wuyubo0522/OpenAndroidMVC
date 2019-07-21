@@ -14,13 +14,15 @@ allprojects {
 ### 2.添加依赖
 ```
 dependencies {
-	  implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.2'
+	  implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.3'
 }
 ```
 
 ### 版本说明
+#### 1.0.4
+这个版本待定，其他遇到更多的需求，完善我的MVC架构模式的开源库
 #### 1.0.3
-这个版本待定，其他遇到更多的需求，完善我的MVC架构模式的开源库。
+修复小刀注解出现的bug。
 #### 1.0.2
 修复了1.0.1中BaseActivity的bug。
 #### 1.0.1
