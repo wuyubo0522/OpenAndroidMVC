@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin:'com.github.dcendents.android-maven'
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.0.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     // 支持Java8，使用Lambda表达式
@@ -31,7 +31,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     // 组件视图绑定依赖，黄油刀
-    api 'com.jakewharton:butterknife:10.1.0'
+    implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
     // 支持腾讯X5内核自定义View
     implementation files('libs/tbs_sdk_thirdapp_v3.6.0.jar')
