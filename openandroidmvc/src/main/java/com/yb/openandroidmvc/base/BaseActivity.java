@@ -25,10 +25,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 获取xml布局的ID
+        setContentView(getLayoutId());
         // 视图绑定
         ButterKnife.bind(this);
-        // 获取xml布局的ID
-        getLayoutId();
         // 初始化数据
         initData();
         // 初始化界面
