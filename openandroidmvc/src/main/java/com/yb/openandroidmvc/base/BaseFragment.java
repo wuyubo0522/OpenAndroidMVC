@@ -37,17 +37,17 @@ public abstract class BaseFragment extends Fragment {
      *
      * @return xml的资源ID
      */
-    abstract int getLayoutId();
+    public abstract int getLayoutId();
 
     /**
      * 初始化界面
      */
-    abstract void initView();
+    public abstract void initView();
 
     /**
      * 初始化数据
      */
-    abstract void initData();
+    public abstract void initData();
 
     /**
      * 跳转其他界面
