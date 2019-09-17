@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin:'com.github.dcendents.android-maven'
+
 android {
     compileSdkVersion 29
     defaultConfig {
@@ -26,12 +27,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    // 组件视图绑定依赖，黄油刀
-    implementation 'com.jakewharton:butterknife:10.1.0'
+    // 使用小刀注解
+    api 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
     // 支持腾讯X5内核自定义View
     implementation files('libs/tbs_sdk_thirdapp_v3.6.0.jar')

@@ -32,8 +32,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.3'
+    implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.4'
     // 组件视图绑定依赖，黄油刀
-    implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 }
