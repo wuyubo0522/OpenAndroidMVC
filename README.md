@@ -14,7 +14,9 @@ allprojects {
 ### 2.添加依赖
 ```
 dependencies {
-	  implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.4'
+	implementation 'com.github.wuyubo0522:OpenAndroidMVC:1.0.4'
+	// 使用小刀注解必须添加这句代码，要不然会找不到小刀注解类
+	annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 }
 ```
 
